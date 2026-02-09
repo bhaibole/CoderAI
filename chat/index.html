@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Chat | AI Nexus</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">AI<span>Nexus</span></div>
+        <div class="links">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/chat">AI Chat</a>
+        </div>
+    </nav>
+
+    <div id="chat-container" style="max-width: 800px; margin: 2rem auto; background: var(--card); border-radius: 15px; height: 70vh; display: flex; flex-direction: column;">
+        <div id="messages" style="flex: 1; padding: 20px; overflow-y: auto;">
+            </div>
+        <div style="padding: 20px; border-top: 1px solid #333; display: flex;">
+            <input type="text" id="userInput" placeholder="Ask AI anything..." style="flex: 1; background: #222; border: none; padding: 12px; color: white; border-radius: 5px;">
+            <button onclick="sendMessage()" style="background: var(--primary); border: none; color: white; padding: 0 20px; margin-left: 10px; cursor: pointer; border-radius: 5px;">Send</button>
+        </div>
+    </div>
+
+    <script src="../main.js"></script>
+</body>
+</html>
